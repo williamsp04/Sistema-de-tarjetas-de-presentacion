@@ -1,0 +1,715 @@
+body {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    font-family: sans-serif;
+    color: red;
+    padding: 2px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.secindex {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 40px / 30px;
+    background: -webkit-linear-gradient(top, #FFFF00, #ffffff, #0000FF); /* gradiente lineal multicolor */  
+}
+
+.titu_ind {
+    display: block;
+    color: chocolate;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 29px;
+}
+
+.etiqueta { 
+    font: bold 20px Verdana, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    /* poner sombra en texto estableciendo el: 
+    desplazamiento horizontal (X), vertical (Y), desenfoque (blur) y el color */
+    text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.5);
+    color: blue;
+}
+
+#usuario,
+#contraseña {
+    width: 50%;
+    padding: 10px;   
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* forza al navegador a incluir el relleno y el borde en el tamaño declarado por la 
+    propiedad width (con la propiedad "border-box" se incluye el relleno y el borde como parte del ancho, 
+    la cual se puede combinar anchos en % con rellenos en pixeles) */
+}
+
+#enviar {  
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+
+#enviar:hover {
+    background-color: #800000;
+}
+
+.btn_ind {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    display: contents; /* para quitar el subrayado del link */
+}
+
+
+/************ ESTILOS LOG_REGISTER **************/
+.titulo {
+    display: block;
+    color: chocolate;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.subtitu {
+    font-size: 17px;
+    text-align: center;
+    color: red;
+}
+
+.secregist {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px auto;
+    width: 360px;
+    padding: 60px;
+    border: 2px solid #ccc;
+    border-radius: 20px / 10px;
+    background: -webkit-linear-gradient(top, #FFFF00, #ffffff, #0000FF);
+}
+
+.present {
+    display: grid;
+}
+
+.log-regis {
+    text-align: center;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    display: contents; /* para quitar el subrayado del link */
+}
+
+.etiqueta_reg {
+    font-size: 18px;
+}
+
+#reg_usuario, #reg_clave, #reg_clave2,.reg_log {
+    width: 70%;
+    padding: 12px;   
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+/********************* ESTILOS DEL HOME ******************/
+.secproces {
+    font-size: 30px;
+    background: -webkit-linear-gradient(top, #FFFF00, #ffffff, #0000FF); /* gradiente lineal multicolor */
+}
+
+.carousel {
+    width: 960px;
+    height: 430px;
+    overflow: hidden;
+    border: solid;
+}
+
+.slide {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 81px;
+    height: 86px;
+    cursor: pointer;
+    filter: grayscale(1);
+    /*filter: none;*/
+}
+
+/*ACTUALIZACION DE TARJETA */
+.avatari {
+    width: 169px;
+    height: 117px;
+    cursor: pointer;
+    filter: grayscale(1);
+    /*filter: none;*/
+}
+
+.ocultaR {
+visibility: hidden; /*oculta los input tipo radio*/
+}
+
+.filtroAv {
+filter: none;
+/*filter: contrast(0.8); /*para indicar que la imagen esta seleccionada */
+}
+
+:root {
+  --hover-opacity: 0.6;  /*uso de CSS variable para controlar la opacidad de la imagen */
+}
+
+label:hover img {
+    opacity: var(--hover-opacity);
+    /*opacity: 0.5; /* Opcional: Opaca la imagen al pasar el mouse (pseudo-selector) */
+    transition: opacity 0.8s ease; /* Transición suave al cambiar la opacidad */
+    
+}
+
+input[type="radio"] {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;  /* el input esté por encima de la imagen. */
+}
+
+.botav {
+    background-color: #554d4d;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    display: inline-block; /* los botones se colocan uno al lado del otro sin romper el flujo del texto. */
+}
+
+.botav:hover {
+    background-color: #232121;
+}
+
+
+/********************* ESTILOS DEL HOME SERVICIOS ******************/
+.container {
+    width: 97%;
+    overflow: hidden;
+    border: solid;
+    margin: 0 auto;
+    border: none;
+}
+
+.container_tarj {
+    width: 38%;
+    overflow: hidden;
+    border: solid;
+    float: left; /* flota el elemento a la izquierda del contenedor */
+    border-radius: 40px;
+}
+
+.container_paleta {
+    width: 16%;
+    overflow: hidden;
+    border: solid;
+    height: 280px;
+    float: right;  /* flota el elemento a la derecha del contenedor */
+    margin-right: 38%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.est_pal {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+}
+
+.est_pal:hover {
+    background: -webkit-linear-gradient(top, #FFFF00, #ffffff, #0000FF); /* gradiente lineal multicolor */
+    color: black;
+    font-weight: bold;
+}
+
+.tarjet {
+    width: 370px;
+    height: 380px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: montserrat;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+.btn_div {
+    border: solid;
+    margin-right: 38%;
+    margin-left: 43%;
+    margin-top: -13%;
+    border-radius: 20px;
+}
+
+.btn_enviar {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    margin-top: -17px;
+}
+
+.btn_enviar:hover {
+    background-color: #800000;
+}
+
+
+.footer {
+    height: 60px;
+    background-color: #a52a2a;
+}
+
+:root {
+  --img-ancho: 35px;     /*uso de CSS variable para controlar el ancho de la imagen */
+  --img-marg-top: 12px; /*uso de CSS variable para controlar el margen superior de la imagen */
+}
+
+.img_fa {
+    width: var(--img-ancho);
+    margin-top: var(--img-marg-top);
+    margin-left: 60px;
+}
+
+.img_tw {
+    width: var(--img-ancho);
+    margin-top: var(--img-marg-top);
+    margin-left: 10px;
+}
+
+.img_in {
+    width: var(--img-ancho);
+    margin-top: var(--img-marg-top);
+    margin-left: 10px;
+}
+
+.encabez {
+    font-size: 40px;
+    /*color: forestgreen;*/
+    text-transform: uppercase;
+}
+
+.encabez_2 {
+    font-size: 32px;
+    /*color: burlywood;*/
+    text-transform: uppercase;
+}
+
+.linea {
+    font-size: 25px;
+}
+
+.conten {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.eq_content {
+    margin-left: 18px;
+}
+
+/********************* ESTILOS DEL DASHBOARD ******************/
+
+.carousel_das {
+    width: 85%;
+    overflow: hidden;
+    border: solid;
+    margin-top: -1%;
+}
+
+.encabez_das {
+    font-size: 12px;
+    /*color: forestgreen;*/
+    text-transform: uppercase;
+}
+
+.encabez_das_2 {
+    font-size: 12px;
+    /*color: burlywood;*/
+    text-transform: uppercase;
+    display: flex;
+}
+
+.linea_das {
+    font-size: 10px;
+    display: flex;
+    margin-top: -21%;
+}
+
+.conten_das {
+    width: 10px;
+    margin-top: 10px;
+}
+
+.eq_content_das {
+    margin-left: 4px;
+    font-size: 11px;
+}
+
+.footer_das {
+    height: 33px;
+    background-color: #a52a2a;
+}
+
+:root {
+    --img-ancho_das: 10px;
+    --img-marg-top_das: 10px;
+}
+
+.img_fa_das {
+    width: var(--img-ancho_das);
+    margin-top: var(--img-marg-top_das);
+    margin-left: 18px;
+}
+
+.img_tw_das {
+    width: var(--img-ancho_das);
+    margin-top: var(--img-marg-top_das);
+    margin-left: 10px;
+}
+
+.img_in_das {
+    width: var(--img-ancho_das);
+    margin-top: var(--img-marg-top_das);
+    margin-left: 10px;
+}
+
+.tarjet_das {
+    width: 150px;
+    height: 165px;
+    margin-top: -5px;
+    font-weight: bold;
+    font-family: montserrat;
+    font-style: italic;
+    margin-left: 8px;
+}
+
+.container_tarj_das {
+    width: 18%;
+    overflow: hidden;
+    border: solid;
+    float: left;
+    border-radius: 25px;
+}
+
+.container_tarj_das:hover {
+    filter: invert(1);
+}
+
+.btn_das {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: -73%;
+    margin-top: 4%;
+    width: 151px;
+}
+
+.btn_das:hover {
+    background-color: #832323;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+
+.conten_das_avatar {
+    width: 50px;
+    margin-top: -73px;
+    float: right;
+    margin-right: 3%;
+}
+
+/********************* ESTILOS CONFIGURACION DE TARJETA ******************/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    float:left;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight:400;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    width: 200px;
+    font-weight: bold;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    width: 220px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav li:hover .submenu {
+    display: block;
+    background:#FFFF00;
+}
+
+nav li a:hover {
+    display: block;
+    background:#000000;
+    color: white;
+}
+
+.container_config {
+    width: 39%;
+    overflow: hidden;
+    border: solid;
+    float: left;
+    border-radius: 40px;
+}
+
+.config_tarjet {
+    width: 360px;
+    height: 335px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: montserrat;
+    font-style: italic;
+    margin-left: 30px;
+}
+
+.encabez_config {
+    font-size: 32px;
+    /* color: forestgreen; */
+    text-transform: uppercase;
+}
+
+.linea_config {
+    font-size: 20px;
+}
+
+.conten_config {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.eq_content_config {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.conten_config_avatar {
+    width: 145px;
+    margin-top: -220px;
+    float: right;
+    margin-right: 3%;
+}
+
+.footer_config {
+    height: 60px;
+    background-color: #a52a2a;
+}
+
+.container_paleta_config {
+    width: 16%;
+    overflow: hidden;
+    border: solid;
+    height: 330px;
+    float: right;
+    margin-right: 21%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn_div_config {
+    border: solid;
+    margin-right: 45%;
+    margin-left: 42%;
+    margin-top: -36%;
+    border-radius: 20px;
+}
+
+.btn_paleta {
+    background-color: #554d4d;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    margin-top: -17px;
+}
+
+.container_avatar_config {
+    width: 34%;
+    overflow: hidden;
+    border: solid;
+    height: 330px;
+    float: right;
+    margin-right: 7%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel_config {
+    width: 415px;
+    overflow: hidden;
+    border: none;
+    height: 320px;
+}
+
+.avatar_config {
+    width: 83px;
+    height: 85px;
+    cursor: pointer;
+    filter: grayscale(1);
+    /* filter: none; */
+}
+
+/********************* ESTILOS ACTUALIZACION DE DATOS DE USUARIO ******************/
+
+.actreg {
+    width: 34%;
+    padding: 12px;   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.actreg2 {
+    width: 20%;
+    padding: 12px;   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 23%;
+}
+
+.secactreg {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px auto;
+    width: 62%;
+    padding: 60px;
+    border: 2px solid #ccc;
+    border-radius: 20px / 10px;
+    background: -webkit-linear-gradient(top, #FFFF00, #ffffff, #0000FF);
+}
+
+.format {
+    display: block;
+}
+
+/********************* ESTILOS RECUPERA CONTRASEÑA ******************/
+
+.btn_enviar2 {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    display: block;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    margin-top: -1%;
+}
+
+.btn_enviar2:hover {
+    background-color: #800000;
+}
+
+.rec_inp {
+    width: 96%;
+    padding: 12px;   
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    text-transform: uppercase;
+}
+
+/**************** ESTILOS DE INFORMACION *****************************/
+
+.img_dim {
+    width: 357px;
+    height: 233px;
+}
+
+.ico {
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    color: red;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.descrip {
+    font-size: 25px;
+    display: block;
+    color: lime;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
